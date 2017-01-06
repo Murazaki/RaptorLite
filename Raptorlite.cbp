@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Raptorlite" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\Raptorlite" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\Raptorlite" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-static-libgcc" />
+			<Add directory="C:\SFML-1.6\include" />
+			<Add directory="include" />
+			<Add directory="include\SFML" />
+		</Compiler>
+		<Linker>
+			<Add option="-lsfml-audio" />
+			<Add option="-lsfml-graphics" />
+			<Add option="-lsfml-window" />
+			<Add option="-lsfml-system" />
+			<Add library="sfml-audio" />
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="C:\SFML-1.6\lib" />
+			<Add directory="lib" />
+		</Linker>
+		<Unit filename="src\RaptorEnnemi\RaptorEnnemi.cpp" />
+		<Unit filename="src\RaptorEnnemi\RaptorEnnemi.h" />
+		<Unit filename="src\RaptorJoueur\RaptorJoueur.cpp" />
+		<Unit filename="src\RaptorJoueur\RaptorJoueur.h" />
+		<Unit filename="src\RaptorNiveau\RaptorNiveau.cpp" />
+		<Unit filename="src\RaptorNiveau\RaptorNiveau.h" />
+		<Unit filename="src\RaptorPartie\RaptorPartie.cpp" />
+		<Unit filename="src\RaptorPartie\RaptorPartie.h" />
+		<Unit filename="src\RaptorPosition2D\RaptorPosition2D.cpp" />
+		<Unit filename="src\RaptorPosition2D\RaptorPosition2D.h" />
+		<Unit filename="src\RaptorTirAmi\RaptorTirAmi.cpp" />
+		<Unit filename="src\RaptorTirAmi\RaptorTirAmi.h" />
+		<Unit filename="src\RaptorTirEnnemi\RaptorTirEnnemi.cpp" />
+		<Unit filename="src\RaptorTirEnnemi\RaptorTirEnnemi.h" />
+		<Unit filename="src\RaptorTir\RaptorTir.cpp" />
+		<Unit filename="src\RaptorTir\RaptorTir.h" />
+		<Unit filename="src\RaptorVaisseau\RaptorVaisseau.cpp" />
+		<Unit filename="src\RaptorVaisseau\RaptorVaisseau.h" />
+		<Unit filename="src\main.cpp" />
+		<Unit filename="src\raptor.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
